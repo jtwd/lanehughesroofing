@@ -1,0 +1,727 @@
+/*------------------------------------------------------------------------------------
+
+	Theme Name: Eternity
+	Theme URI: http://demo.themechills.com/eternity
+	Description: A beautiful landing page template for all wedding occasions.
+	Author: ThemeChills
+	Author URI: http://www.themechills.com
+
+--------------------------------------------------------------------------------------
+
+	1.	Overrides
+	2.	Main Content Styles
+	3.	Sidebar Styles
+	4.	Forms - Base Styles
+	5.	Image Gallery
+	6.	Footer Styles
+	7.	Helpers
+  8.  Header Styles
+
+------------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'ostrich_sansbold';
+    src: url('../fonts/ostrich-bold-webfont.eot');
+    src: url('../fonts/ostrich-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ostrich-bold-webfont.woff') format('woff'),
+         url('../fonts/ostrich-bold-webfont.ttf') format('truetype'),
+         url('../fonts/ostrich-bold-webfont.svg#ostrich_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	1.	Overrides
+/*-----------------------------------------------------------------------------------*/
+
+body {
+	color:#838383;
+	font-family:'Roboto Slab', serif;
+	text-align: center;
+  background:#f6f8f8;
+}
+a {
+	color:#9f0000;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+  text-decoration:underline;
+}
+a:hover {
+	color:#670000;
+}
+img {
+	max-width: 100%;
+	height: auto;
+  display:block;
+}
+
+/*==== Headings ====*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {	
+	color:#583b3f;
+	font-family: 'Alegreya','Helvetica Neue', Helvetica, sans-serif;
+	font-weight: normal;
+	line-height: 1.5;
+}
+
+/*==== The Grid ====*/
+
+.row,
+.row .row {
+	height: 100%;
+	max-width: 100%;
+	margin:0;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	2.	Main Content Styles
+/*-----------------------------------------------------------------------------------*/
+
+header {
+	margin-top: 0;
+	padding-top: 60px;
+}
+blockquote {
+	border-left: none;
+	padding: 4em 2em;	
+	margin-bottom: 0;
+	text-align: left;
+}
+blockquote:before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: 0;
+	width: 1px;
+	background:#d9d9d9;
+}
+blockquote.caption-2:before {
+	background:none
+}
+.subline {
+	padding: 1em 0.5em 0;
+}
+.section-title-container {	
+	text-align: center;
+	margin: 3em 0 2em;
+}
+.section-title {	
+	border-bottom: 4px double #c9b29b;
+	display: inline-block;
+	text-align: center;
+	font-size: 3.4em;
+	line-height: 1.2;
+	margin: 0;
+	width: 100%;
+}
+.section-title em {
+	color:#987c61;
+	font-family: 'Playfair Display', serif;
+	font-size: 0.5em;
+}
+.hearts {
+	background:url(../img/icon-hearts.png) no-repeat center bottom;	
+	display: block;
+	height: 2em;
+	position: relative;
+	z-index: 4;
+	bottom: 20px;
+}
+.divider {
+	border-bottom:1px solid #e4e4e4;
+}
+
+.tick {
+  list-style:none;
+  color:#755f49;
+}
+.tick li {
+  padding-left:25px;
+  position:relative;
+  line-height: 1.4;
+  padding-bottom:10px;
+}
+.tick li:before {
+  content:'✓';
+  display:inline-block;
+  position:absolute;
+  top:-3px;
+  left:-3px;
+  color:#007f00;
+  font-size:1.4em;
+}
+.tick strong {
+  color:#007f00;
+}
+
+/*==== Date Block ====*/
+
+.intro-container {
+	padding: 0.5em .5em 2.5em;
+  text-align:left;
+}
+.intro-container.col-1 {
+	border-bottom:1px solid #e4e4e4;
+	padding: 1.5em .5em 0em;
+}
+.intro-container a {
+	text-decoration: none;
+}
+
+
+.intro-container, .subline, .side-nav {
+	color: #56bf56;
+	font-family: 'Roboto Slab', serif;
+	font-weight:bold;	
+}
+.intro-container h3 {
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	margin-top: 1em;
+	font-size:1em;
+	font-weight:bold;
+	color:#755f49;
+}
+
+/*==== Callout ====*/
+
+.callout {
+	clear:both;
+	text-align: center;
+	margin: 1em 0 2em;
+}
+.callout .button {
+	margin-bottom: 0;
+}
+
+/*==== Telephone ====*/
+
+.tel {
+  text-align:center;
+  font-size:1em;
+  color:#755f49;
+}
+.tel i {
+  color:#007f00;
+}
+.tel a {
+	text-decoration: none;
+}
+
+/*==== Sections ====*/
+
+div[id*="section-"] {
+	overflow: hidden;
+	text-align: center;
+}
+.section-odd {
+	background:#f7f7f7;
+}
+.btn-label {
+	margin-left: 0.5em;
+  line-height:1.4;
+}
+
+/*==== Block Grid ====*/
+
+.block-grid li {
+	margin-bottom: 0.88em;
+}
+.block-grid .block-logo {
+	background-color: #FFF;
+	border-radius: 10px;
+	display: table-cell;
+	height: 10em;
+	text-align: center;
+	padding: 4em;
+	vertical-align: middle;
+	width: 50%;	
+}
+.block-logo:hover {
+	background-color: #FFF;
+	cursor: pointer;
+}
+.block-logo img {
+	opacity: .5;
+	-webkit-filter: grayscale(1);
+	-webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+}
+.block-logo:hover img {
+	opacity: 1;
+	-webkit-filter: grayscale(0)
+}
+.visible-img img {
+	width: auto;
+}
+
+/*==== Content Block ====*/
+
+.content-block {
+	margin: 2em 0 6em;
+	line-height: 2em;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	3.	Sidebar Styles
+/*-----------------------------------------------------------------------------------*/
+
+aside {
+	width: 100%;
+	height: 30em;
+	top: 0;
+	right: 0;
+	bottom: auto;
+	position: relative!important;
+	z-index: 997;
+  display:none;
+  border-right:1px solid #e5e5e5;
+}
+aside .postfix.button {
+	line-height:0.125em;
+	padding:1.43em 0;
+}
+.side-nav {
+	background-color:#007f00; /* fallback */
+	background: rgba(0, 127, 0, 0.9); 
+	margin: 0;
+	padding:0;
+}
+.side-nav li { 
+	margin:0;
+}
+.side-nav li a {
+	color:#fff;
+	border-top: 1px solid #005300;
+	display: block;
+	padding: 1.25em;
+  text-decoration: none;
+}
+.side-nav li.active a,
+.side-nav li a:hover {	
+	background-color:#fff;
+	color:#007f00;
+}
+.side-nav-container {
+	margin: 0 auto;
+	width: 59%;
+}
+.shadow {	
+	-webkit-box-shadow: 0 0 1.5em #6e6e6e;
+	   -moz-box-shadow: 0 0 1.5em #6e6e6e;
+			box-shadow: 0 0 1.5em #6e6e6e;
+}
+.logo {		
+	margin:5em auto;
+}
+.logo a {
+	background-color: #007f00; /* fallback */
+	background-color: rgba( 0, 127, 0, 0.9);
+	color:#fff;
+	display: block;
+	font-size: 2.5em;
+	letter-spacing: -12px;
+	border-radius: 30px;
+  padding:20px 12%;
+  text-align: center;
+}
+.logo a img {
+  width:auto;
+  max-width:100%;
+  margin:0 auto;
+}
+.ribbon {
+	background:none;
+	display: block;
+	height: 8px;
+	opacity: 0.9;
+}
+
+/* Global Buttons */
+
+button, .button {
+	background-color: #9f0000;
+	border-color: transparent;
+	-webkit-box-shadow: none;
+		    box-shadow: none;
+	text-transform: uppercase;
+	padding: 1.250em 1.5em;
+}
+button:hover, 
+button:focus, 
+.button:hover, 
+.button:focus {
+	background-color:#670000;
+}
+
+/* High Quality/Definition Images */
+
+.hd {
+	margin-bottom: 1em;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	4.	Forms - Base Styles
+/*-----------------------------------------------------------------------------------*/
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+	background-color: #F5F5F6;
+	border: 1px solid #F5F5F6;
+	border-radius: 3px; 
+	height: 38px;
+	color: #818b92;
+	-webkit-font-smoothing: antialiased;
+	-webkit-appearance: none;
+	-webkit-box-shadow: none;
+			box-shadow: none;
+	-webkit-transition: .25s ease-in;
+	   -moz-transition: .25s ease-in;
+		    transition: .25s ease-in;
+}
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="date"]:focus, 
+input[type="datetime"]:focus, 
+input[type="datetime-local"]:focus, 
+input[type="month"]:focus, 
+input[type="week"]:focus, 
+input[type="email"]:focus, 
+input[type="number"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+input[type="time"]:focus, 
+input[type="url"]:focus, 
+textarea:focus {
+	background-color: #FFF;
+	border:1px solid #de675f;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+		    box-shadow: none;
+} 
+
+label {
+	text-align: left;
+	margin-bottom: 0.5em;
+}
+
+/*==== RSVP ====*/
+
+.rsvp-form {
+	margin:2em 0 4em;
+}
+.rsvp-form fieldset {
+	border-color:#e6e6e6;
+	padding: 2em 0.5em;
+	margin: 1em 1em 3em;
+}
+.rsvp-form legend {
+	font-weight: normal;
+	padding: 0 1em;
+	line-height: 1.4;
+}
+.rsvp-form div[class*="large-"] {
+	padding-left:0.9375em!important;
+	padding-right:0.9375em!important;
+}
+.rsvp-attendance label {
+	text-align:center;
+	display: inline-block;
+}
+.rsvp-attendance .radio-label {
+	display: block;
+	margin-top: 1em;
+}
+
+form.custom .radio {
+	border: solid 5px #e6e6e6;
+	height: 29px;
+	width: 30px;
+}
+form.custom .custom.radio.checked:before {
+	top: 4px;
+	left: 5px;
+	background-color: #e6e6e6;
+	width: 10px;
+	height: 10px;
+}
+form.custom .dropdown {
+	text-align: left;
+}
+
+/*==== Error Handling ====*/
+
+[data-abide] .error small.error, 
+[data-abide] span.error, 
+[data-abide] small.error {
+	display: block;
+	padding: 0.875em 0.25em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 0.75em;
+	font-weight: normal;
+	background: #c60f13;
+	color: white; 
+}
+[data-abide] span.error, 
+[data-abide] small.error {
+	display: none; 
+}
+span.error, small.error {
+	display: block;
+	padding: 0.375em 0.25em;
+	margin-top: 0;
+	margin-bottom: 1em;
+	font-size: 0.75em;
+	font-weight: bold;
+	background: #c60f13;
+	color: white; 
+}
+.error input,
+.error textarea,
+.error select {
+	border-color: #c60f13;
+	background-color: rgba(198, 15, 19, 0.1);
+	margin-bottom: 0; 
+}
+.error input:focus,
+.error textarea:focus,
+.error select:focus {
+  	background: #fafafa;
+  	border-color: #999999; 
+}
+.error label,
+.error label.error {
+  	color: #c60f13; 
+}
+.error > small,
+.error small.error {
+	display: block;
+	padding: 0.375em 0.25em;
+	margin-top: 0;
+	margin-bottom: 1em;
+	font-size: 0.75em;
+	font-weight: bold;
+	background: #c60f13;
+	color: white; 
+}
+.error span.error-message {
+	display: block; 
+}
+input.error,
+textarea.error {
+	border-color: #c60f13;
+	background-color: rgba(198, 15, 19, 0.1);
+	margin-bottom: 0; 
+}
+input.error:focus,
+textarea.error:focus {
+	background: #fafafa;
+	border-color: #999999; 
+}
+.error select {
+  	border-color: #c60f13;
+  	background-color: rgba(198, 15, 19, 0.1); 
+}
+.error select:focus {
+	background: #fafafa;
+	border-color: #999999; 
+}
+label.error {
+	color: #c60f13; 
+}
+
+/*==== Notification Panel ====*/
+
+.message-panel {
+	background-color: #ffffe0;
+	border-color: #e6db55;
+	padding: 1em;
+	font-size: 0.850em;
+	margin: 0 0 2em;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	5.	Image Gallery
+/*-----------------------------------------------------------------------------------*/
+
+.carousel li {
+	position: relative;
+	margin: 0;
+	max-width:100%;
+	width: 100%;
+}
+.carousel img {
+	max-width: 100%;
+	height: auto;
+}
+.overlay-label {
+	background-color: rgba( 222, 103, 95, 0.7);
+	display: inline;
+	left: 0px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 3px;
+	opacity: 0;
+	margin: 0px;	
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 45%;
+	color: white;
+	font-size: 15px;
+	-webkit-transition: all .4s;
+	   -moz-transition: all .4s;
+	        transition: all .4s;
+
+}
+.overlay-label:hover {
+	opacity: 1;
+}
+
+/* Navigation */
+
+.top-bar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 997;
+	text-align: left;
+  background:#007f00;
+}
+.top-bar-section li a:not(.button) {
+  background:#007f00; 
+}
+.top-bar .name {
+	color:#fff;
+	font-weight: bold;
+	line-height: 3em;
+	padding-left: 1em;
+	margin-right: 1em;
+}
+.top-bar-section ul li {
+	border-bottom: 1px dotted #005300;
+}
+.top-bar-section ul li > a {
+	background: #007f00;
+	font-weight: normal;
+  text-decoration: none;
+}
+.top-bar.expanded .title-area, .top-bar-section ul li > a:hover, .top-bar-section li a:not(.button):hover {
+  background:#185f1b;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	6.	Footer Styles
+/*-----------------------------------------------------------------------------------*/
+
+footer {
+	overflow: hidden;	
+	text-align: center;
+	padding: 2em 2em 0.5em;
+}
+footer p {
+	font-size: 0.750em;
+	margin-bottom: 0;
+}
+footer a {
+	color:#6f6f6f;
+	text-transform: lowercase;
+}
+.copyright {
+	margin-bottom: 0.650em;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	7.	Helpers
+/*-----------------------------------------------------------------------------------*/
+
+.wrapper {
+	padding: 0 1em!important;
+}
+.sep {
+	margin: 3em 0 2em;
+}
+.preloader {
+	background:url(../img/status.gif) no-repeat center center; 
+	min-height:400px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	8.	Header styles
+/*-----------------------------------------------------------------------------------*/
+
+.header-logo {
+  text-align:center;
+  padding:0 12%;
+  margin:0 auto;
+  width:78%;
+}
+.header-logo img {
+  margin:0 auto;
+}
+.header-title {
+  font-size:1.5em;
+  line-height:1.2;
+  width:80%;
+  min-width:220px;
+  max-width:250px;
+  margin:0.5em auto 1.2em;
+  color:#755f49;
+}
+
+
+.section-container.accordion section {
+	margin-bottom:0.3em;
+}
+.no-js .section-container > section > .title a {
+	font-size: 1.1em;
+	padding:0.5em;
+	text-decoration: none;
+	font-weight: bold;
+	color:#666;
+}
+.section-container.accordion>section.active>.content {
+	padding:0 0 12px;
+	text-align: left;
+}
+.section-container .content img {
+	margin: 0 auto 0.75em;
+	border:0;
+}
+.section-container .content p {
+	font-size: 0.9em;
+	max-width: 565px;
+	margin: 0 auto 12px;
+	padding: 0 12px 12px;
+}
+
+.slides li blockquote {
+	padding: 0 0 1rem;
+}
+
+
+.testi-long p { font-size: 0.9rem; }
+.testi-short p { font-size: 1.35rem; }

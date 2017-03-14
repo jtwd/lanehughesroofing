@@ -1,0 +1,387 @@
+/*------------------------------------------------------------------------------------
+
+	Theme Name: Eternity
+	Theme URI: http://demo.themechills.com/eternity
+	Description: A beautiful landing page template for all wedding occasions.
+	Author: ThemeChills
+	Author URI: http://www.themechills.com
+
+--------------------------------------------------------------------------------------
+
+	1. Screens that are at least 768px
+	2. Screens that are at least 940px
+	3. Screens that are at least 1280px
+	4. iPads (landscape)
+	5. iPads (portrait)
+	6. Retina Image Support
+
+
+
+
+-------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 30em) {
+	.section-container .content {
+		overflow: auto;
+  	zoom: 1;
+  	padding-bottom: 8px !important;
+	}
+	.section-container .content img {
+		width: 38%;
+		float:left;
+		margin: 8px;
+	}
+	.section-container .content p {
+		padding: 6px 6px 24px;
+		width: 58%;
+		float:left;
+	}
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	1. Styles for screens that are at least 768px; */
+/*-----------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 48em) {
+
+	blockquote {
+		padding: 4em;
+	}
+
+	/*==== The Logo ====*/
+
+	.logo {		
+		margin:1em auto 0;
+	}
+	.logo a {
+		border-radius: 0;
+	}
+	.ribbon {
+		background:url(../img/ribbon.png) bottom left repeat-x;		
+	}
+
+	header {
+    background-image:  url(../img/embelishment-alt.png), url(../img/embelishment-alt.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 80%;
+    background-position: bottom left, bottom right;
+  }
+
+	/*==== The Grid ====*/
+
+	.large-3,
+	.large-9 {
+		width:100%;
+	}
+	.row .large-offset-1 {
+		margin-left: 0;
+	}
+	.clearing-assembled .clearing-container .carousel {
+		height:185px;
+	}
+	.clearing-assembled .clearing-container .carousel > ul li {
+		margin-right: 5px;
+		width: 185px;
+	}
+	.section-title {	
+		font-size: 4.8em;			
+		width: auto;	
+	}
+	.section-title em {
+		display: inline;
+	}
+	.section-title span:first-child {
+		margin-right: -15px;	
+	}
+	.section-title span:last-child {
+		margin-left: -10px;	
+	}	
+	.block-grid .block-logo {
+		height: 15em;
+		text-align: center;
+		padding: 4em;
+		width: 50%;	
+	}
+
+	/*==== Carousel +  Flexslider ====*/
+
+	.carousel li {
+		width: 25%;
+	}
+
+	/*==== Form ====*/
+
+	.rsvp-form fieldset {
+		padding: 2.5em;	
+	}
+
+	/*==== Date Block ====*/
+
+	.intro-container {
+		padding: .5em 0em 1.5em;
+		text-align: left;
+	}
+	.intro-container.col-1 {			
+		border-bottom: none;
+    text-align: left;
+	}
+	.intro-container.col-2 {
+		
+	} 
+	.date-container .day-date {
+		font-size: 1.250em;		
+	}
+	.date-container .day-time, 
+	.date-container .day-address {
+		font-size: 1.563em;
+	}
+	.date-container .day-meta {
+		font-size: 2.188em;
+	}
+
+  .tel {
+    font-size:1.5em;
+  }
+  .callout {
+    margin-top:1em;
+  }
+  
+	/*==== Footer ====*/
+
+	footer {
+		text-align: left;
+	}
+	footer .credit {
+		text-align: right;
+	}	
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	2. Styles for screens that are at least 940px; */
+/*-----------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 58.75em) {
+
+	.top-bar-section ul {
+		position: absolute;
+		right: 0;
+	}
+	.top-bar-section ul li {
+		border: none;
+	}
+
+	.title-area {
+		display: none;
+	}
+
+	.intro-container.col-2 {
+		padding-top: 0em;
+		padding-bottom: 2em;
+	}
+  
+}
+
+@media only screen and (min-width: 61.875em) {
+	.intro-container.col-2 {
+		border-left: 1px solid #e4e4e4;
+	}
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	3. Styles for screens that are at least 1040px; */
+/*-----------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 65em) {
+
+	/*==== The Logo ====*/
+
+	.logo {		
+		margin:auto;
+	}
+
+	.hero-unit {
+		max-width: auto;
+		width:100%;
+	}
+  
+  .header-logo { display: none; }
+  
+  .header-title {
+    width:auto;
+    line-height:1.3;
+    max-width:100%;
+    font-size:2.3em;
+    margin-top:0.2em;
+    margin-bottom:0.5em;
+    color: #007f00;
+  }
+  
+  header {
+    padding: 2em 4em;
+    color: #007f00;
+    background-image:  url(../img/embelishment-alt.png), url(../img/embelishment-alt.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 99%;
+    background-position: top left, top right;
+  }
+
+  .intro-container.col-1 {
+  	padding-left:1rem;
+  }
+
+  .intro-container.col-2 {
+  	padding-top:0.5em;
+  }
+
+	/*==== Visibility ====*/
+
+	.hide-for-large, 
+	.hide-for-large-down {
+		display: inherit !important;
+	}
+
+	/*==== The Grid ====*/
+
+	.large-3 {
+		width: 25%;
+	}
+	.large-9 {
+		width: 75%;
+	}
+	.row .large-offset-1 {
+		margin-left: 8.33333%;
+	}
+	.section-title-container {
+		margin-top: 0em
+	}
+	.section-title {
+		margin-top: 0.35em;
+	}
+
+	/*==== The Sidebar ====*/
+	
+	aside {
+		height: 100%;
+		position: fixed!important;
+		float: left;
+		display: block;
+		left: 0;
+		z-index: 10;
+		background-color:#999;
+	}
+	#main > .row {
+		padding-top: 0;
+	}
+	.top-bar {
+		display: none!important;
+	}
+  
+  .tel {
+    font-size:1.2em;
+  }
+  
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	3. Styles for screens that are at least 1280px; */
+/*-----------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 80em) {
+
+	.header-title {
+		font-size:2.8em;
+		margin-top: 0;
+		margin-bottom: 0.2em;
+	}
+
+	.section-container .title {
+  	font-size:1.4rem;
+  }
+
+  .section-container .content p, #section-1 p, .tick, blockquote, .intro-container h3, .intro-container .tel {
+  	font-size: 1.25rem;
+  }
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	3. Styles for screens that are at least 1440px; */
+/*-----------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 90em) {
+
+	.header-title {
+		font-size:3.2em;
+	}
+
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	4. Styles for iPads (landscape) */
+/*-----------------------------------------------------------------------------------*/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	
+	/*==== The Top Bar ====*/
+
+	.top-bar {
+		overflow: hidden;
+		position: fixed;
+	}
+	.top-bar-section ul {
+		float: right;
+	}
+	.top-bar-section ul li {
+		border-bottom: none;
+	}
+
+	/*==== The Header ====*/
+	
+	
+
+	/*==== Gifts Grid ====*/
+	
+	#section-5 .large-6 {
+		width: 66.66667%;
+	}
+  .intro-container {
+		padding:3em;
+	} 
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	5. Styles for iPads (portrait) */
+/*-----------------------------------------------------------------------------------*/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	
+	blockquote {
+		padding: 2em 2em 4em;
+	}
+
+	/*==== Date Block ====*/
+
+	.intro-container {
+		padding:3em;
+	} 
+	.date-section > .large-6 {
+		width: 100%;
+	}
+	.intro-container.col-1 {
+		border-bottom: 1px solid #e4e4e4;
+		padding-bottom: 1em;
+	}
+
+	/*==== Gifts Grid ====*/
+	
+	#section-5 .large-6 {
+		width: 83.33333%;
+	}
+
+}

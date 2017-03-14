@@ -1,0 +1,6 @@
+* { margin:0; padding:0; }
+html { background:url(img/bg.jpg); }
+html, body { height:100%; text-align:center; font-family:Verdana, Geneva, Tahoma, sans-serif; }
+
+div { max-width:495px; margin:50px auto; width:90%; padding-bottom:50px; }
+div img { display:block; width:100%; margin-bottom:15px; }
